@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+<!--start header section -->
+<header>
+  <div
+    class="max-w-[1200px] m-auto lg:p-8 ms:p-3 md:p-5 flex justify-between items-center"
+  >
+    <div class="md:w-28 lg:w-52 ms:w-36">
+      <img src="img/images01.png" alt="website-logo" />
+    </div>
+    <div
+      class="flex justify-center relative lg:mr-20 lg:w-96 md:w-72 md:text-base ms:hidden"
+    >
+      <input
+        type="search"
+        placeholder="Search Everything"
+        id="search"
+        class="lg:p-[8px_0px_8px_20px] md:p-[3px_0px_3px_20px] border-[1px] border-[solid] border-[#e4e4e4] w-[400px] rounded-full relative"
+      />
+      <div
+        class="lg:w-14 md:w-10 md:h-[31px] lg:h-[41px] p-1 text-[22px] text-center bg-[#f379a7] hover:bg-[#95b3e0] rounded-r-full absolute right-0"
+      >
+        <i
+          class="bx bx-search lg:text-[19px] lg: md:text-base lg:mt-2"
+          style="color: #fff"
+        ></i>
+      </div>
+    </div>
+    <div>
+      <div
+        class="lg:text-2xl ms:text-[1.4rem] md:text-2xl ms:flex ms:items-center gap-x-2"
+      >
+        <i class="bx bx-heart hover:text-[#f379a7]"></i>
+        <i class="bx bx-notification hover:text-[#f379a7]"></i>
+        <button id="menu-toggle" class="block md:hidden focus:outline-none">
+          <i class="fa-solid fa-bars hover:text-[#f379a7]"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <div class="max-w-[1200px] m-auto lg:p-5 md:p-4 ">
+    <nav>
+      <ul>
+        <!-- desktop screen -->
+        <div
+          class="flex justify-center items-center lg:gap-10 md:gap-5 uppercase font-extrabold font-rubik ms:hidden"
+        >
+          <div class="flex items-center gap-1 hover:text-[#f379a7]">
+            <li class="md:text-xs lg:text-lg">
+              <a href="/src/index.html">home</a>
+            </li>
+            <i class="bx bx-chevron-down text-base"></i>
+          </div>
+          <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+            <a href="/src/about.html">about</a>
+          </li>
+          <div class="flex items-center gap-1 hover:text-[#f379a7]">
+            <li class="md:text-xs lg:text-lg">
+              <a href="/src/pages.html">pages</a>
+            </li>
+            <i class="bx bx-chevron-down text-base"></i>
+          </div>
+          <div class="flex items-center gap-1 hover:text-[#f379a7]">
+            <li class="md:text-xs lg:text-lg">
+              <a href="/src/shop.html">shop</a>
+            </li>
+            <i class="bx bx-chevron-down text-base"></i>
+          </div>
+          <div class="flex items-center gap-1 hover:text-[#f379a7]">
+            <li class="md:text-xs lg:text-lg">
+              <a href="/src/blog.html">blog</a>
+            </li>
+            <i class="bx bx-chevron-down text-base"></i>
+          </div>
+          <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+            <a href="/src/contact us.html">contact</a>
+          </li>
+        </div>
+
+        <!-- mobile devices -->
+        <div
+          id="mobile-menu"
+          class="flex flex-col md:hidden  items-center bg-gray-50 space-y-4 p-5 capitalize font-rubik font-semibold text-xl"
+        >
+          <li class="hover:text-[#f379a7]">
+            <a href="/src/index.html">home</a>
+          </li>
+          <li class="hover:text-[#f379a7]">
+            <a href="/src/about.html">about</a>
+          </li>
+          <li class="hover:text-[#f379a7]">
+            <a href="/src/pages.html">pages</a>
+          </li>
+          <li class="hover:text-[#f379a7]">
+            <a href="/src/shop.html">shop</a>
+          </li>
+          <li class="hover:text-[#f379a7]">
+            <a href="/src/blog.html">blog</a>
+          </li>
+          <li class="hover:text-[#f379a7]">
+            <a href="/src/contact us.html">contact</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--start header section -->
+
+  <!-- start section main -->
+  <main class="bg-[#94b3e3] relative">
+    <div class="absolute">
+      <img src="img/images06.png" alt="bobbling-banner" />
+    </div>
+    <div
+      class="max-w-[1200px] m-auto p-8 flex flex-col items-center text-center"
+    >
+      <div class="mt-28 mb-28">
+        <h1 class="text-6xl capitalize text-white font-fredoka">product</h1>
+        <p class="text-lg text-white font-fredoka hover:text-[#e67da3] mt-5">
+          Home <span class="text-[#e67da3] capitalize">// about us</span>
+        </p>
+      </div>
+    </div>
+  </main>
+  <!-- end section main -->
+
+  <!-- start section product found -->
+   <section>
+    <div class="max-w-[1200px] m-auto p-8">
+       <div class="w-[100%] h-16 border border-[#e0e0e0] p-5 rounded-full flex items-center justify-between">
+           <div class="text-[#f379a7] font-rubik font-semibold">
+            <p class="ms:text-[0.70rem]">12 <span class="text-[#6c6c6c]">Product Found of </span>30</p>
+           </div>
+           <div class="ms:hidden text-2xl">
+            <i class='bx bxs-grid text-[#f379a7]'></i>
+            <i class='bx bx-grid-horizontal text-[#6c6c6c] hover:text-[#f379a7]'></i>
+            <i class='bx bx-grid-small text-[#6c6c6c] hover:text-[#f379a7]'></i>
+           </div>
+           <div class="flex items-center gap-2 text-[#6c6c6c] font-rubik font-semibold">
+            <p class="ms:text-[0.70rem]">Sort By : <span class="text-[#f379a7]">Default</span></p>
+            <i class="bx bx-chevron-down text-base text-[#f379a7] text-xl"></i>
+           </div>
+       </div>
+    </div>
+   </section>
+  <!-- end section product found -->
+
+  <!-- start section product -->
+   <section>
+    <div class="max-w-[1200px] m-auto p-8 mb-10">
+        <div class="flex justify-start lg:gap-9 pt-10 items-start flex-wrap gap-3 xl:justify-center lg:mb-6">
+            <div class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img class="m-auto" src="img/images11.png" alt="teddy bear" />
+              <div class="mt-10">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+  
+            <div class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img class="m-auto" src="img/images12.png" alt="play sets" />
+              <div class="mt-10 md:mt-14">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">baby play sets</p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+  
+            <div class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img class="m-auto" src="img/images13.png" alt="teddy bear" />
+              <div class="lg:mt-[5.5rem] ms:mt-14 md:mt-[4.8rem]">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">
+                  puzzles for kids
+                </p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+  
+            <div class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img class="m-auto" src="img/images14.png" alt="dress" />
+              <div class="mt-[2rem]">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+  
+            <div class="xl:w-64 ms:hidden sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img
+                class="mt-4"
+                class="m-auto"
+                src="img/images15.png"
+                alt="ship"
+              />
+              <div class="lg:mt-[5rem]  ms:mt-12 md:mt-[6rem]">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+  
+            <div class="xl:w-64 lg:w-[30%] ms:hidden sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img class="m-auto" src="img/images14.png" alt="dress" />
+              <div class="mt-[2rem]">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+  
+            <div class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img class="m-auto" src="img/images17.png" alt="teddy bear" />
+              <div class="mt-[2rem]">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+  
+            <div class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8">
+              <img
+                class="m-auto mt-4"
+                src="img/images18.png"
+                alt="teddy bear"
+              />
+              <div class="lg:mt-16 md:mt-[4.8rem] ms:mt-12">
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+                <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+                <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+              </div>
+            </div>
+          </div>
+        <div class="flex justify-center text-center gap-3 text-[#d5d5d5] font-bold mt-14">
+            <div class="w-10 h-10 border border-[#d5d5d5] p-1 rounded bg-[#f379a7] text-white">1</div>
+            <div class="w-10 h-10 border border-[#d5d5d5] p-1 rounded hover:bg-[#f379a7] hover:text-white">2</div>
+            <div class="w-10 h-10 border border-[#d5d5d5] p-1 rounded hover:bg-[#f379a7] hover:text-white">3</div>
+            <div class="w-10 h-10 border border-[#d5d5d5] p-1 rounded hover:bg-[#f379a7] hover:text-white">></div>
+        </div>
+    </div>
+   </section>
+  <!-- end section product -->
+
+     <!-- start footer section -->
+     <section
+     class="bg-[#333333] bg-[url('/src/img/images19.png')] bg-opacity-100"
+   >
+     <div
+       class="max-w-[1200px] m-auto p-8 grid md:grid-cols-[25%_50%_25%] items-center"
+     >
+       <div>
+         <img
+           class="ms:w-36 ms:m-auto"
+           src="img/images33.png"
+           alt="website logo"
+         />
+         <p
+           class="lg:w-[15rem] md:w-[10rem] ms:text-sm text-justify mt-5 text-white"
+         >
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+           id adipisci odio cumque temporibus hic nostrum quas sint
+           exercitationem aspernatur ipsam voluptatum enim soluta, neque aut
+           cum reiciendis eaque tempora.
+         </p>
+         <div class="mt-5 flex justify-center ms:gap-4 md:gap-7">
+           <i class="fa-brands fa-twitter text-white hover:text-[#f379a7]"></i>
+           <i class="fa-brands fa-tiktok text-white hover:text-[#f379a7]"></i>
+           <i
+             class="fa-brands fa-facebook text-white hover:text-[#f379a7]"
+           ></i>
+           <i
+             class="fa-brands fa-instagram text-white hover:text-[#f379a7]"
+           ></i>
+         </div>
+       </div>
+       <div class="flex justify-between items-center lg:ml-10 ms:mt-5">
+         <div class="text-white">
+           <h1 class="text-lg text-white font-fredoka ms:text-base">
+             Quick Links
+           </h1>
+           <div class="mt-2">
+             <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+           </div>
+         </div>
+
+         <div class="text-white">
+           <h1 class="text-lg text-white font-fredoka ms:text-base">
+             Quick Links
+           </h1>
+           <div class="mt-2">
+             <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+           </div>
+         </div>
+
+         <div class="text-white">
+           <h1 class="text-lg text-white font-fredoka ms:text-base">
+             Quick Links
+           </h1>
+           <div class="mt-2">
+             <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+             <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+           </div>
+         </div>
+
+         <div></div>
+       </div>
+       <div class="md:mt-16 ms:mt-5">
+         <h1 class="text-lg text-white font-fredoka ms:text-base">
+           Store Information.
+         </h1>
+         <div class="text-white mt-3">
+           <p class="ms:text-sm">2005 Your Address Goes Here.</p>
+           <p class="mt-1 ms:text-sm">896, Address 10010, HGJ</p>
+           <p class="mt-1 ms:text-sm">
+             Phone/Fax: <span class="hover:text-[#f379a7]">0123456789</span>
+           </p>
+           <p class="mt-1 ms:text-sm">
+             Email: <span class="hover:text-[#f379a7]">demo@example.com</span>
+           </p>
+         </div>
+         <div class="mt-8">
+           <img class="md:w-56 ms:w-48" src="img/images34.png" alt="cards" />
+         </div>
+       </div>
+     </div>
+   </section>
+   <!-- end footer section -->
+
+   <!-- start copy right section -->
+   <section class="bg-[#333333]">
+     <div
+       class="max-w-[1200px] m-auto p-2 text-center font-rubik font-bold text-white ms:text-xs"
+     >
+       <p>
+         &copy;2021 <span class="text-[#f379a7]">Muhammad Hamza.</span> Made
+         <i class="fa-solid fa-heart" style="color: #e40733"></i> with by
+         MHThemes
+       </p>
+     </div>
+   </section>
+   <!-- start copy right section -->
+  </h1>
+</body>
+<script>
+  // JavaScript for toggling the mobile menu
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+</html>

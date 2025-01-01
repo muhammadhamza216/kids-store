@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+   <!--start header section -->
+    <header>
+      <div
+        class="max-w-[1200px] m-auto lg:p-8 ms:p-3 md:p-5 flex justify-between items-center"
+      >
+        <div class="md:w-28 lg:w-52 ms:w-36">
+          <img src="img/images01.png" alt="website-logo" />
+        </div>
+        <div
+          class="flex justify-center relative lg:mr-20 lg:w-96 md:w-72 md:text-base ms:hidden"
+        >
+          <input
+            type="search"
+            placeholder="Search Everything"
+            id="search"
+            class="lg:p-[8px_0px_8px_20px] md:p-[3px_0px_3px_20px] border-[1px] border-[solid] border-[#e4e4e4] w-[400px] rounded-full relative"
+          />
+          <div
+            class="lg:w-14 md:w-10 md:h-[31px] lg:h-[41px] p-1 text-[22px] text-center bg-[#f379a7] hover:bg-[#95b3e0] rounded-r-full absolute right-0"
+          >
+            <i
+              class="bx bx-search lg:text-[19px] lg: md:text-base lg:mt-2"
+              style="color: #fff"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <div
+            class="lg:text-2xl ms:text-[1.4rem] md:text-2xl ms:flex ms:items-center gap-x-2"
+          >
+            <i class="bx bx-heart hover:text-[#f379a7]"></i>
+            <i class="bx bx-notification hover:text-[#f379a7]"></i>
+            <button id="menu-toggle" class="block md:hidden focus:outline-none">
+              <i class="fa-solid fa-bars hover:text-[#f379a7]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="max-w-[1200px] m-auto lg:p-5 md:p-4 ">
+        <nav>
+          <ul>
+            <!-- desktop screen -->
+            <div
+              class="flex justify-center items-center lg:gap-10 md:gap-5 uppercase font-extrabold font-rubik ms:hidden"
+            >
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/index.html">home</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+                <a href="/src/about.html">about</a>
+              </li>
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/pages.html">pages</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/shop.html">shop</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/blog.html">blog</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+                <a href="/src/contact us.html">contact</a>
+              </li>
+            </div>
+
+            <!-- mobile devices -->
+            <div
+              id="mobile-menu"
+              class="flex flex-col md:hidden  items-center bg-gray-50 space-y-4 p-5 capitalize font-rubik font-semibold text-xl"
+            >
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/index.html">home</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/about.html">about</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/pages.html">pages</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/shop.html">shop</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/blog.html">blog</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/contact us.html">contact</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--start header section -->
+
+    <!-- start section main -->
+    <main class="bg-[#94b3e3] relative">
+      <div class="absolute">
+        <img src="img/images06.png" alt="bobbling-banner" />
+      </div>
+      <div
+        class="max-w-[1200px] m-auto p-8 flex flex-col items-center text-center"
+      >
+        <div class="mt-28 mb-28">
+          <h1 class="text-6xl capitalize text-white font-fredoka">about us</h1>
+          <p class="text-lg text-white font-fredoka hover:text-[#e67da3] mt-5">
+            Home <span class="text-[#e67da3] capitalize">// about us</span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- end section main -->
+
+    <!-- start section content -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8">
+        <div
+          class="flex lg:justify-between justify-center items-center mt-10 mb-10 ms:flex-wrap md:flex-wrap lg:flex-nowrap"
+        >
+          <div>
+            <img
+              class="xl:w-[32rem] xl:h-[27rem] md:w-[25rem]"
+              src="img/image-about/shop02.png"
+              alt="img"
+            />
+          </div>
+          <div
+            class="mt-10 md:ml-5 md:flex md:flex-col ms:flex ms:flex-col ms:items-center md:items-center lg:items-start"
+          >
+            <h2 class="text-4xl font-fredoka text-[#e67da3] ms:text-center">
+              Hello there!
+            </h2>
+            <p
+              class="ms:text-xl md:w-[31rem] p-2 text-3xl font-rubik font-extrabold mt-5 ms:text-center md:text-center lg:text-start"
+            >
+              Lorem ipsum dolor sit amet,<br />
+              consectetur adipisicing elit sed dolo
+            </p>
+            <p class="text-justify md:w-[35rem] text-base mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmo temp incidi ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam quis nostru exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duislpl aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugial
+              nulla pariatur. Excepteur sint occaecat.
+            </p>
+            <button
+              class="bg-[#e67da3] p-[15px_40px_15px_40px] rounded-full text-lg capitalize font-fredoka text-white mt-14 hover:bg-[#95b3e0]"
+            >
+              <a href="">contact us</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section content -->
+
+    <!-- start kids shop name -->
+    <section>
+      <hr />
+      <div class="max-w-[1200px] m-auto p-8">
+        <div
+          class="flex lg:justify-between ms:gap-x-2 mt-3 mb-3 md:gap-2 ms:w-14 md:w-28 lg:w-auto"
+        >
+          <img src="img/image-about/shop04.png" alt="baby" />
+          <img src="img/image-about/shop05.png" alt="play-house" />
+          <img src="img/image-about/shop06.png" class="ms:hidden" alt="kids-logos" />
+          <img src="img/image-about/shop07.png"  alt="child-dream" />
+          <img src="img/image-about/shop08.png" alt="toys" />
+          <img src="img/image-about/shop09.png" alt="kids" />
+        </div>
+      </div>
+
+      <hr />
+    </section>
+    <!-- start kids shop name -->
+
+    <!-- start section team member  -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8">
+        <div class="flex flex-col items-center mt-10 mb-10">
+          <h1 class="text-4xl font-fredoka">Team Members</h1>
+          <p class="md:w-[33rem] text-center mt-5 ms:w-[22.5rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end section team member  -->
+
+    <!-- start section team member images -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8">
+        <div
+          class="flex justify-between ms:flex-wrap ms:justify-center ms:gap-y-36 mt-20 mb-20"
+        >
+          <div>
+            <div
+              class="bg-[#95b3e0] ms:w-[15rem] ms:h-56 md:w-[14rem] lg:w-[19rem] xl:w-[23rem] md:h-60 lg:h-80 rounded-lg relative hover:bg-[#e67da3]"
+            >
+              <img
+                class="absolute bottom-0 lg:left-5 md:w-[12rem] lg:w-[17rem]"
+                src="img/image-about/shop10.png"
+                alt="man"
+              />
+            </div>
+            <div class="text-center mt-7">
+              <h2 class="text-2xl text-[#3b3a3a] font-medium">
+                Alyana Thomson
+              </h2>
+              <p class="text-[1.3rem] text-[#3b3a3a] mt-1">Customer</p>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-[#95b3e0] ms:w-[15rem] ms:h-56 md:w-[14rem] lg:w-[19rem] xl:w-[23rem] md:h-60 lg:h-80 rounded-lg relative hover:bg-[#e67da3]"
+            >
+              <img
+                class="absolute bottom-0 md:left-3 lg:left-5 xl:left-8 md:w-[12rem] lg:w-[17rem]"
+                src="img/image-about/shop11.png"
+                alt="man"
+              />
+            </div>
+            <div class="text-center mt-7">
+              <h2 class="text-2xl text-[#3b3a3a] font-medium">
+                Phoenix Walker
+              </h2>
+              <p class="text-[1.3rem] text-[#3b3a3a] mt-1">Customer</p>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-[#95b3e0] ms:w-[15rem] ms:h-56 md:w-[14rem] lg:w-[19rem] xl:w-[23rem] md:h-60 lg:h-80 rounded-lg relative hover:bg-[#e67da3] ms:mt-7"
+            >
+              <img
+                class="absolute bottom-0 md:left-5 lg:left-10 md:w-[12rem] lg:w-64"
+                src="img/image-about/shop12.png"
+                alt="man"
+              />
+            </div>
+            <div class="text-center mt-7">
+              <h2 class="text-2xl text-[#3b3a3a] font-medium">Oscar Thomsen</h2>
+              <p class="text-[1.3rem] text-[#3b3a3a] mt-1">Customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section team member images -->
+
+    <!-- start testimonial section -->
+    <section>
+      <div class="bg-[#c0dfe8] relative">
+        <img
+          src="img/image-about/images1.png"
+          alt="bottom-img"
+          class="absolute bottom-0"
+        />
+        <div class="max-w-[1200px] m-auto p-8">
+          <div class="flex flex-col items-center mt-20 mb-10">
+            <h1 class="text-4xl font-fredoka">Team Members</h1>
+            <p class="md:w-[33rem] text-center mt-5 ms:w-[22.5rem]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="mt-14 mb-16">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <div
+                      class="relative md:w-[14rem] lg:w-[19.5rem] xl:w-[22rem] p-8 bg-white rounded-[0.5rem_0.5rem_0.5rem_2rem]"
+                    >
+                      <p class="text-gray-800 text-lg italic text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit
+                        sed do eiusmod temporlo incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim.
+                      </p>
+                      <div
+                        class="absolute top-0 -left-1 text-blue-300 text-6xl font-bold"
+                      >
+                        <img
+                          src="img/image-about/shop13.png"
+                          alt="img-comma"
+                          class="w-8"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <img
+                        src="img/image-about/shop15.png"
+                        alt="Profile picture"
+                        class="w-20 h-20 rounded-full"
+                      />
+                      <div class="ml-4">
+                        <h3 class="text-[#3b3a3a] text-xl">Dasia Lovell</h3>
+                        <p class="text-[#3b3a3a] text-[1.1rem]">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div
+                      class="relative md:w-[14rem] lg:w-[19.5rem] xl:w-[22rem] p-8 bg-white rounded-[0.5rem_0.5rem_0.5rem_2rem]"
+                    >
+                      <p class="text-gray-800 text-lg italic text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit
+                        sed do eiusmod temporlo incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim.
+                      </p>
+                      <div
+                        class="absolute top-0 -left-1 text-blue-300 text-6xl font-bold"
+                      >
+                        <img
+                          src="img/image-about/shop13.png"
+                          alt="img-comma"
+                          class="w-8"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <img
+                        src="img/image-about/shop17.png"
+                        alt="Profile picture"
+                        class="w-20 h-20 rounded-full"
+                      />
+                      <div class="ml-4">
+                        <h3 class="text-[#3b3a3a] text-xl">Akhil Newman</h3>
+                        <p class="text-[#3b3a3a] text-[1.1rem]">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div
+                      class="relative md:w-[14rem] lg:w-[19.5rem] xl:w-[22rem] p-8 bg-white rounded-[0.5rem_0.5rem_0.5rem_2rem]"
+                    >
+                      <p class="text-gray-800 text-lg italic text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit
+                        sed do eiusmod temporlo incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim.
+                      </p>
+                      <div
+                        class="absolute top-0 -left-1 text-blue-300 text-6xl font-bold"
+                      >
+                        <img
+                          src="img/image-about/shop13.png"
+                          alt="img-comma"
+                          class="w-8"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <img
+                        src="img/image-about/shop16.png"
+                        alt="Profile picture"
+                        class="w-20 h-20 rounded-full"
+                      />
+                      <div class="ml-4">
+                        <h3 class="text-[#3b3a3a] text-xl">Demetri Caron</h3>
+                        <p class="text-[#3b3a3a] text-[1.1rem]">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div>
+                    <div
+                      class="relative md:w-[14rem] lg:w-[19.5rem] xl:w-[22rem] p-8 bg-white rounded-[0.5rem_0.5rem_0.5rem_2rem]"
+                    >
+                      <p class="text-gray-800 text-lg italic text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit
+                        sed do eiusmod temporlo incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim.
+                      </p>
+                      <div
+                        class="absolute top-0 -left-1 text-blue-300 text-6xl font-bold"
+                      >
+                        <img
+                          src="img/image-about/shop13.png"
+                          alt="img-comma"
+                          class="w-8"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <img
+                        src="img/image-about/shop15.png"
+                        alt="Profile picture"
+                        class="w-20 h-20 rounded-full"
+                      />
+                      <div class="ml-4">
+                        <h3 class="text-[#3b3a3a] text-xl">Dasia Lovell</h3>
+                        <p class="text-[#3b3a3a] text-[1.1rem]">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div
+                      class="relative md:w-[14rem] lg:w-[19.5rem] xl:w-[22rem] p-8 bg-white rounded-[0.5rem_0.5rem_0.5rem_2rem]"
+                    >
+                      <p class="text-gray-800 text-lg italic text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit
+                        sed do eiusmod temporlo incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim.
+                      </p>
+                      <div
+                        class="absolute top-0 -left-1 text-blue-300 text-6xl font-bold"
+                      >
+                        <img
+                          src="img/image-about/shop13.png"
+                          alt="img-comma"
+                          class="w-8"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <img
+                        src="img/image-about/shop16.png"
+                        alt="Profile picture"
+                        class="w-20 h-20 rounded-full"
+                      />
+                      <div class="ml-4">
+                        <h3 class="text-[#3b3a3a] text-xl">Demetri Caron</h3>
+                        <p class="text-[#3b3a3a] text-[1.1rem]">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div>
+                    <div
+                      class="relative md:w-[14rem] lg:w-[19.5rem] xl:w-[22rem] p-8 bg-white rounded-[0.5rem_0.5rem_0.5rem_2rem]"
+                    >
+                      <p class="text-gray-800 text-lg italic text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit
+                        sed do eiusmod temporlo incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim.
+                      </p>
+                      <div
+                        class="absolute top-0 -left-1 text-blue-300 text-6xl font-bold"
+                      >
+                        <img
+                          src="img/image-about/shop13.png"
+                          alt="img-comma"
+                          class="w-8"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <img
+                        src="img/image-about/shop15.png"
+                        alt="Profile picture"
+                        class="w-20 h-20 rounded-full"
+                      />
+                      <div class="ml-4">
+                        <h3 class="text-[#3b3a3a] text-xl">Dasia Lovell</h3>
+                        <p class="text-[#3b3a3a] text-[1.1rem]">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <div
+                      class="relative md:w-[14rem] lg:w-[19.5rem] xl:w-[22rem] p-8 bg-white rounded-[0.5rem_0.5rem_0.5rem_2rem]"
+                    >
+                      <p class="text-gray-800 text-lg italic text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit
+                        sed do eiusmod temporlo incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim.
+                      </p>
+                      <div
+                        class="absolute top-0 -left-1 text-blue-300 text-6xl font-bold"
+                      >
+                        <img
+                          src="img/image-about/shop13.png"
+                          alt="img-comma"
+                          class="w-8"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <img
+                        src="img/image-about/shop17.png"
+                        alt="Profile picture"
+                        class="w-20 h-20 rounded-full"
+                      />
+                      <div class="ml-4">
+                        <h3 class="text-[#3b3a3a] text-xl">Akhil Newman</h3>
+                        <p class="text-[#3b3a3a] text-[1.1rem]">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial section -->
+
+    <!-- start section subscribe & sales -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8">
+        <div
+          class="w-full bg-[url('/src/img/image-about/shop19.png')] bg-no-repeat p-8 lg:mt-20 lg:mb-20 md:mb-5 md:mt-5 ms:hidden"
+        >
+          <div class="lg:mt-20 lg:mb-16 flex justify-between items-center">
+            <div>
+              <p class="md:text-2xl lg:text-4xl text-white font-fredoka">
+                Subscribe for Exclusive <br />
+                Sales & News
+              </p>
+            </div>
+
+            <div>
+              <div
+                class="flex justify-center relative lg:mr-20  md:w-60 md:text-base ms:hidden"
+              >
+                <input
+                  type="search"
+                  placeholder="Search Everything"
+                  id="search"
+                  class="lg:p-[8px_8px_8px_20px] md:p-[5px_0px_5px_25px] border-[1px] border-[solid] border-[#e4e4e4]  rounded-full relative"
+                />
+                <div
+                  class="lg:w-14 md:w-10 md:h-[36px] lg:h-[42px] p-1 text-[22px] text-center bg-[#f379a7] hover:bg-[#95b3e0] rounded-r-full absolute right-0"
+                >
+                  <i
+                    class="bx bx-search lg:text-[19px] lg: md:text-base lg:mt-2"
+                    style="color: #fff"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start section subscribe & sales -->
+
+    <!-- start footer section -->
+    <section
+      class="bg-[#333333] bg-[url('/src/img/images19.png')] bg-opacity-100"
+    >
+      <div
+        class="max-w-[1200px] m-auto p-8 grid md:grid-cols-[25%_50%_25%] items-center"
+      >
+        <div>
+          <img
+            class="ms:w-36 ms:m-auto"
+            src="img/images33.png"
+            alt="website logo"
+          />
+          <p
+            class="lg:w-[15rem] md:w-[10rem] ms:text-sm text-justify mt-5 text-white"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+            id adipisci odio cumque temporibus hic nostrum quas sint
+            exercitationem aspernatur ipsam voluptatum enim soluta, neque aut
+            cum reiciendis eaque tempora.
+          </p>
+          <div class="mt-5 flex justify-center ms:gap-4 md:gap-7">
+            <i class="fa-brands fa-twitter text-white hover:text-[#f379a7]"></i>
+            <i class="fa-brands fa-tiktok text-white hover:text-[#f379a7]"></i>
+            <i
+              class="fa-brands fa-facebook text-white hover:text-[#f379a7]"
+            ></i>
+            <i
+              class="fa-brands fa-instagram text-white hover:text-[#f379a7]"
+            ></i>
+          </div>
+        </div>
+        <div class="flex justify-between items-center lg:ml-10 ms:mt-5">
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">
+              Quick Links
+            </h1>
+            <div class="mt-2">
+              <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">
+              Quick Links
+            </h1>
+            <div class="mt-2">
+              <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">
+              Quick Links
+            </h1>
+            <div class="mt-2">
+              <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="md:mt-16 ms:mt-5">
+          <h1 class="text-lg text-white font-fredoka ms:text-base">
+            Store Information.
+          </h1>
+          <div class="text-white mt-3">
+            <p class="ms:text-sm">2005 Your Address Goes Here.</p>
+            <p class="mt-1 ms:text-sm">896, Address 10010, HGJ</p>
+            <p class="mt-1 ms:text-sm">
+              Phone/Fax: <span class="hover:text-[#f379a7]">0123456789</span>
+            </p>
+            <p class="mt-1 ms:text-sm">
+              Email: <span class="hover:text-[#f379a7]">demo@example.com</span>
+            </p>
+          </div>
+          <div class="mt-8">
+            <img class="md:w-56 ms:w-48" src="img/images34.png" alt="cards" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end footer section -->
+
+    <!-- start copy right section -->
+    <section class="bg-[#333333]">
+      <div
+        class="max-w-[1200px] m-auto p-2 text-center font-rubik font-bold text-white ms:text-xs"
+      >
+        <p>
+          &copy;2021 <span class="text-[#f379a7]">Muhammad Hamza.</span> Made
+          <i class="fa-solid fa-heart" style="color: #e40733"></i> with by
+          MHThemes
+        </p>
+      </div>
+    </section>
+    <!-- start copy right section -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        426: {
+          slidesPerView: 1, // Mobile
+        },
+        750: {
+          slidesPerView: 3, // Tablet
+        },
+        1280: {
+          slidesPerView: 3, // Desktop
+        },
+      },
+    });
+
+     // JavaScript for toggling the mobile menu
+     const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   <!--start header section -->
+   <header>
+    <div
+      class="max-w-[1200px] m-auto lg:p-8 ms:p-3 md:p-5 flex justify-between items-center"
+    >
+      <div class="md:w-28 lg:w-52 ms:w-36">
+        <img src="img/images01.png" alt="website-logo" />
+      </div>
+      <div
+        class="flex justify-center relative lg:mr-20 lg:w-96 md:w-72 md:text-base ms:hidden"
+      >
+        <input
+          type="search"
+          placeholder="Search Everything"
+          id="search"
+          class="lg:p-[8px_0px_8px_20px] md:p-[3px_0px_3px_20px] border-[1px] border-[solid] border-[#e4e4e4] w-[400px] rounded-full relative"
+        />
+        <div
+          class="lg:w-14 md:w-10 md:h-[31px] lg:h-[41px] p-1 text-[22px] text-center bg-[#f379a7] hover:bg-[#95b3e0] rounded-r-full absolute right-0"
+        >
+          <i
+            class="bx bx-search lg:text-[19px] lg: md:text-base lg:mt-2"
+            style="color: #fff"
+          ></i>
+        </div>
+      </div>
+      <div>
+        <div
+          class="lg:text-2xl ms:text-[1.4rem] md:text-2xl ms:flex ms:items-center gap-x-2"
+        >
+          <i class="bx bx-heart hover:text-[#f379a7]"></i>
+          <i class="bx bx-notification hover:text-[#f379a7]"></i>
+          <button id="menu-toggle" class="block md:hidden focus:outline-none">
+            <i class="fa-solid fa-bars hover:text-[#f379a7]"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="max-w-[1200px] m-auto lg:p-5 md:p-4 ">
+      <nav>
+        <ul>
+          <!-- desktop screen -->
+          <div
+            class="flex justify-center items-center lg:gap-10 md:gap-5 uppercase font-extrabold font-rubik ms:hidden"
+          >
+            <div class="flex items-center gap-1 hover:text-[#f379a7]">
+              <li class="md:text-xs lg:text-lg">
+                <a href="/src/index.html">home</a>
+              </li>
+              <i class="bx bx-chevron-down text-base"></i>
+            </div>
+            <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+              <a href="/src/about.html">about</a>
+            </li>
+            <div class="flex items-center gap-1 hover:text-[#f379a7]">
+              <li class="md:text-xs lg:text-lg">
+                <a href="/src/pages.html">pages</a>
+              </li>
+              <i class="bx bx-chevron-down text-base"></i>
+            </div>
+            <div class="flex items-center gap-1 hover:text-[#f379a7]">
+              <li class="md:text-xs lg:text-lg">
+                <a href="/src/shop.html">shop</a>
+              </li>
+              <i class="bx bx-chevron-down text-base"></i>
+            </div>
+            <div class="flex items-center gap-1 hover:text-[#f379a7]">
+              <li class="md:text-xs lg:text-lg">
+                <a href="/src/blog.html">blog</a>
+              </li>
+              <i class="bx bx-chevron-down text-base"></i>
+            </div>
+            <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+              <a href="/src/contact us.html">contact</a>
+            </li>
+          </div>
+
+          <!-- mobile devices -->
+          <div
+            id="mobile-menu"
+            class="flex flex-col md:hidden  items-center bg-gray-50 space-y-4 p-5 capitalize font-rubik font-semibold text-xl"
+          >
+            <li class="hover:text-[#f379a7]">
+              <a href="/src/index.html">home</a>
+            </li>
+            <li class="hover:text-[#f379a7]">
+              <a href="/src/about.html">about</a>
+            </li>
+            <li class="hover:text-[#f379a7]">
+              <a href="/src/pages.html">pages</a>
+            </li>
+            <li class="hover:text-[#f379a7]">
+              <a href="/src/shop.html">shop</a>
+            </li>
+            <li class="hover:text-[#f379a7]">
+              <a href="/src/blog.html">blog</a>
+            </li>
+            <li class="hover:text-[#f379a7]">
+              <a href="/src/contact us.html">contact</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--start header section -->
+
+    <!-- start section main -->
+    <main class="bg-[#94b3e3] relative">
+      <div class="absolute">
+        <img src="img/images06.png" alt="bobbling-banner" />
+      </div>
+      <div
+        class="max-w-[1200px] m-auto p-8 flex flex-col items-center text-center"
+      >
+        <div class="mt-28 mb-28">
+          <h1 class="text-6xl capitalize text-white font-fredoka">
+            contact us
+          </h1>
+          <p class="text-lg text-white font-fredoka hover:text-[#e67da3] mt-5">
+            Home <span class="text-[#e67da3] capitalize">// about us</span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- end section main -->
+
+    <!-- start section contact -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8 bg-[#fbfbfb]">
+        <div class="flex ms:flex-wrap ms:justify-center ms:gap-y-5 justify-between xl:ml-20 xl:mr-20 mt-16 mb-16 md:gap-x-5">
+          <div
+            class="w-72 p-5 flex flex-col items-center shadow-2xl rounded-md"
+          >
+            <img
+              src="img/image-about/5.webp"
+              class="w-14 mt-10"
+              alt="location-img"
+            />
+            <h2 class="text-2xl font-fredoka mt-8">Address</h2>
+            <p class="text-[1rem] font-rubik font-semibold mt-6 mb-12">
+              Your address goes here
+            </p>
+          </div>
+
+          <div
+            class="w-72 p-5 flex flex-col items-center shadow-2xl rounded-md"
+          >
+            <img
+              src="img/image-about/6.webp"
+              class="w-14 mt-10"
+              alt="location-img"
+            />
+            <h2 class="text-2xl font-fredoka mt-8">Phone No</h2>
+            <p class="text-[1rem] font-rubik font-semibold mt-6 mb-12">
+              + 00 123 456 789
+            </p>
+          </div>
+
+          <div
+            class="w-72 p-5 flex flex-col items-center shadow-2xl rounded-md"
+          >
+            <img
+              src="img/image-about/7.webp"
+              class="w-14 mt-10"
+              alt="location-img"
+            />
+            <h2 class="text-2xl font-fredoka mt-8">Email / Web</h2>
+            <p class="text-[1rem] font-rubik font-semibold mt-6 mb-12">
+              demo@example.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section contact -->
+
+    <!-- start section location  -->
+    <section>
+      <div class="max-w-[1200px] m-auto">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.283455505474!2d74.33465977398012!3d31.488891648699514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919043dc6173d71%3A0x9aa2e64344511d5d!2sArfa%20Kareem%20Pk%20Rd%2C%20Model%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1735555104386!5m2!1sen!2s"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <!-- end section location  -->
+
+    <!-- start contact form -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8 bg-[#fbfbfb]">
+        <div class="mt-16 mb-10">
+          <h2 class="text-4xl text-center font-fredoka">Send A Quest</h2>
+        </div>
+
+        <div class="flex justify-center">
+          <form action="https://formspree.io/f/mzzzvkwe" method="POST">
+            <div class="flex md:gap-5 ms:gap-y-5 ms:flex-col">
+              <input class="ms:w-[18rem] md:w-[20rem] lg:w-[28rem] p-[0.75rem_0_0.75rem_1rem] border rounded-[1rem] " type="text" name="name" placeholder="Name *"/>
+              <input class="ms:w-[18rem] md:w-[20rem] lg:w-[28rem] p-[0.75rem_0_0.75rem_1rem] border rounded-[1rem] " type="email" name="email" placeholder="Email *" />
+            </div>
+            <div>
+                <input  class=" ms:w-[18rem] md:w-[41.5rem] lg:w-[57.3rem] p-[0.75rem_0_0.75rem_1rem] border rounded-[1rem] mt-7" type="text" name="subject" placeholder="Subject (Optional)" />
+            </div>
+           
+            <div>
+                <textarea class="ms:w-[18rem] md:w-[41.5rem] lg:w-[57.3rem] p-[0.75rem_0_0.75rem_1rem] border rounded-[1rem] mt-7" name="message" placeholder="Message" rows="7"></textarea>
+            </div>
+            <!-- your other form fields go here -->
+             <div class="w-48 rounded-full p-5 bg-[#f379a7] text-white font-fredoka text-center hover:bg-[#95b3e0] mt-10 ms:ml-[3rem] md:ml-[16rem] lg:ml-[22rem] mb-10">
+                <button class="text-center" type="submit">Send Message</button>
+             </div>
+           
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end contact form -->
+
+      <!-- start footer section -->
+      <section
+      class="bg-[#333333] bg-[url('/src/img/images19.png')] bg-opacity-100"
+    >
+      <div class="max-w-[1200px] m-auto p-8 grid md:grid-cols-[25%_50%_25%] items-center">
+        <div>
+          <img class="ms:w-36 ms:m-auto" src="img/images33.png" alt="website logo" />
+          <p class="lg:w-[15rem] md:w-[10rem] ms:text-sm text-justify mt-5 text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+            id adipisci odio cumque temporibus hic nostrum quas sint
+            exercitationem aspernatur ipsam voluptatum enim soluta, neque aut
+            cum reiciendis eaque tempora.
+          </p>
+          <div class="mt-5 flex justify-center ms:gap-4 md:gap-7">
+            <i class="fa-brands fa-twitter text-white hover:text-[#f379a7]"></i>
+            <i class="fa-brands fa-tiktok text-white hover:text-[#f379a7]"></i>
+            <i
+              class="fa-brands fa-facebook text-white hover:text-[#f379a7]"
+            ></i>
+            <i
+              class="fa-brands fa-instagram text-white hover:text-[#f379a7]"
+            ></i>
+          </div>
+        </div>
+        <div class="flex justify-between items-center lg:ml-10 ms:mt-5">
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">Quick Links</h1>
+            <div class="mt-2">
+              <p class=" ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">Quick Links</h1>
+            <div class="mt-2">
+              <p class=" ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">Quick Links</h1>
+            <div class="mt-2">
+              <p class=" ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class=" ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="md:mt-16 ms:mt-5 ">
+          <h1 class="text-lg text-white font-fredoka ms:text-base">Store Information.</h1>
+          <div class="text-white mt-3">
+            <p class="ms:text-sm">2005 Your Address Goes Here.</p>
+            <p class="mt-1 ms:text-sm">896, Address 10010, HGJ</p>
+            <p class="mt-1 ms:text-sm">
+              Phone/Fax: <span class="hover:text-[#f379a7]">0123456789</span>
+            </p>
+            <p class="mt-1 ms:text-sm">
+              Email: <span class="hover:text-[#f379a7]">demo@example.com</span>
+            </p>
+          </div> 
+          <div class="mt-8">
+            <img class="md:w-56 ms:w-48" src="img/images34.png" alt="cards" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end footer section -->
+
+    <!-- start copy right section -->
+    <section class="bg-[#333333]">
+      <div
+        class="max-w-[1200px] m-auto p-2 text-center font-rubik font-bold text-white ms:text-xs"
+      >
+        <p>
+          &copy;2021 <span class="text-[#f379a7]">Muhammad Hamza.</span> Made
+          <i class="fa-solid fa-heart" style="color: #e40733"></i> with by
+          MHThemes
+        </p>
+      </div>
+    </section>
+    <!-- start copy right section -->
+  </body>
+  <script>
+    // JavaScript for toggling the mobile menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>

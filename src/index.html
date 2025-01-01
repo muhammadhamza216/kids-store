@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--start header section -->
+    <header>
+      <div
+        class="max-w-[1200px] m-auto lg:p-8 ms:p-3 md:p-5 flex justify-between items-center"
+      >
+        <div class="md:w-28 lg:w-52 ms:w-36">
+          <img src="img/images01.png" alt="website-logo" />
+        </div>
+        <div
+          class="flex justify-center relative lg:mr-20 lg:w-96 md:w-72 md:text-base ms:hidden"
+        >
+          <input
+            type="search"
+            placeholder="Search Everything"
+            id="search"
+            class="lg:p-[8px_0px_8px_20px] md:p-[3px_0px_3px_20px] border-[1px] border-[solid] border-[#e4e4e4] w-[400px] rounded-full relative"
+          />
+          <div
+            class="lg:w-14 md:w-10 md:h-[31px] lg:h-[41px] p-1 text-[22px] text-center bg-[#f379a7] hover:bg-[#95b3e0] rounded-r-full absolute right-0"
+          >
+            <i
+              class="bx bx-search lg:text-[19px] lg: md:text-base lg:mt-2"
+              style="color: #fff"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <div
+            class="lg:text-2xl ms:text-[1.4rem] md:text-2xl ms:flex ms:items-center gap-x-2"
+          >
+            <i class="bx bx-heart hover:text-[#f379a7]"></i>
+            <i class="bx bx-notification hover:text-[#f379a7]"></i>
+            <button id="menu-toggle" class="block md:hidden focus:outline-none">
+              <i class="fa-solid fa-bars hover:text-[#f379a7]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="max-w-[1200px] m-auto lg:p-5 md:p-4 ">
+        <nav>
+          <ul>
+            <!-- desktop screen -->
+            <div
+              class="flex justify-center items-center lg:gap-10 md:gap-5 uppercase font-extrabold font-rubik ms:hidden"
+            >
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/index.html">home</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+                <a href="/src/about.html">about</a>
+              </li>
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/pages.html">pages</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/shop.html">shop</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <div class="flex items-center gap-1 hover:text-[#f379a7]">
+                <li class="md:text-xs lg:text-lg">
+                  <a href="/src/blog.html">blog</a>
+                </li>
+                <i class="bx bx-chevron-down text-base"></i>
+              </div>
+              <li class="hover:text-[#f379a7] md:text-xs lg:text-lg">
+                <a href="/src/contact us.html">contact</a>
+              </li>
+            </div>
+
+            <!-- mobile devices -->
+            <div
+              id="mobile-menu"
+              class="flex flex-col md:hidden  items-center bg-gray-50 space-y-4 p-5 capitalize font-rubik font-semibold text-xl"
+            >
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/index.html">home</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/about.html">about</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/pages.html">pages</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/shop.html">shop</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/blog.html">blog</a>
+              </li>
+              <li class="hover:text-[#f379a7]">
+                <a href="/src/contact us.html">contact</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--start header section -->
+
+    <!-- start main section -->
+    <main>
+      <div
+        class="w-full bg-[url('/src/img/images02.jpeg')] bg-no-repeat relative"
+      >
+        <div>
+          <img src="img/images06.png" alt="bubble-banner" />
+        </div>
+        <div
+          class="max-w-[1200px] m-auto p-8 md:grid grid-cols-2 ms:p-1 ms:text-center"
+        >
+          <div class="lg:mt-28 ms:mt-10 md:mt-16">
+            <h1
+              class="capitalize lg:text-6xl md:text-5xl text-7xl font-fredoka ms:text-4xl"
+            >
+              best kids store <br />
+              & online shop
+            </h1>
+            <p
+              class="text-2xl md:text-[19px] lg:text-xl capitalize lg:mt-7 md:mt-5 font-fredoka ms:text-lg ms:mt-4"
+            >
+              give the gift of your children everyday
+            </p>
+            <div class="lg:mt-12 md:mt-7 ms:mt-10">
+              <button
+                class="bg-[#f379a7] hover:bg-[#95b3e0] rounded-full text-white p-[15px_35px] ms:p-[8px_20px] capitalize font-bold"
+              >
+                <a class="ms:text-xl" href=""></a>shop this now
+              </button>
+            </div>
+          </div>
+          <div
+            class="md:mt-[117px] lg:w-[500px] md:w-[383px] ms:w-[22rem] xl:w-[630px] ms:ml-3 ms:mt-20"
+          >
+            <img src="img/images03.png" alt="fly-man" />
+          </div>
+        </div>
+        <div
+          class="absolute lg:bottom-10 ms:bottom-3 ms:left-3 ms:w-16 md:w-20 md:bottom-8 md:left-10 left-16"
+        >
+          <img src="img/images05.png" alt="car" />
+        </div>
+        <div class="absolute md:bottom-0 ms:bottom-0 bottom-7">
+          <img src="img/images1.png" alt="banner-bottom" />
+        </div>
+      </div>
+      <hr />
+    </main>
+    <!-- end main section -->
+
+    <!-- start section banner -->
+    <section>
+      <div
+        class="max-w-[1200px] m-auto lg:p-8 md:p-5 flex ms:justify-center ms:gap-y-3 ms:m-[1rem_1rem] ms:flex-wrap lg:gap-7 md:gap-5"
+      >
+        <div
+          class="lg:w-96 md:w-[14rem] ms:w-80 bg-[#fcdcea] hover:bg-[#e4f6fe] lg:p-4 p-5"
+        >
+          <div class="flex justify-between">
+            <div class="mt-2 lg:mt-5 lg:ml-3">
+              <h1
+                class="text-3xl md:text-xl ms:text-lg capitalize font-fredoka"
+              >
+                baby dress
+              </h1>
+              <p class="text-2xl md:text-base font-fredoka mt-2 ms:text-lg">
+                $32.00
+              </p>
+              <p
+                class="text-base md:text-sm capitalize font-fredoka mt-20 ms:text-base"
+              >
+                shop now
+              </p>
+            </div>
+            <div class="w-36 lg:w-28 md:w-24 lg:mt-12 md:mt-10 mt-6">
+              <img src="img/images08.png" alt="dress" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="lg:w-96 md:w-60 ms:w-80 bg-[#fcdcea] hover:bg-[#e4f6fe] p-5"
+        >
+          <div class="flex justify-between">
+            <div class="mt-2 ml-3">
+              <h1
+                class="text-3xl md:text-xl capitalize font-fredoka ms:text-lg"
+              >
+                baby toys
+              </h1>
+              <p class="text-2xl md:text-base font-fredoka mt-2 ms:text-lg">
+                $25.00
+              </p>
+              <p
+                class="text-base md:text-sm capitalize font-fredoka mt-20 ms:text-base"
+              >
+                shop now
+              </p>
+            </div>
+            <div class="mt-20">
+              <img class="w-36" src="img/images09.png" alt="track" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="lg:w-96 md:w-60 ms:w-80 bg-[#fcdcea] hover:bg-[#e4f6fe] p-5"
+        >
+          <div class="flex justify-between">
+            <div class="mt-2 ml-3">
+              <h1
+                class="text-3xl md:text-xl capitalize font-fredoka ms:text-lg"
+              >
+                teddy bear
+              </h1>
+              <p class="text-2xl md:text-base font-fredoka mt-2 ms:text-lg">
+                $18.00
+              </p>
+              <p
+                class="text-base md:text-sm capitalize font-fredoka mt-20 ms:text-base"
+              >
+                shop now
+              </p>
+            </div>
+            <div class="w-32 mt-20">
+              <img src="img/images10.png" alt="dress" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section banner -->
+
+    <!-- start section new product -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8">
+        <div class="flex flex-col items-center mt-12">
+          <h1 class="text-3xl font-fredoka">New Products</h1>
+          <p class="md:w-[35rem] text-center mt-4 ms:w-[22.5rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt ut labore et dolore magna aliqua
+          </p>
+          <div class="mt-14 flex gap-5 ms:gap-2">
+            <button
+              class="w-32 ms:w-28 ms:text-sm border p-2 rounded-full capitalize font-fredoka bg-[#f379a7] text-white"
+            >
+              <a href="">all items</a>
+            </button>
+            <button
+              class="w-32 ms:w-28 ms:text-sm border p-2 rounded-full capitalize font-fredoka hover:bg-[#f379a7] hover:text-white"
+            >
+              <a href="">baby dress</a>
+            </button>
+            <button
+              class="w-32 ms:w-28 ms:text-sm border p-2 rounded-full capitalize font-fredoka hover:bg-[#f379a7] hover:text-white"
+            >
+              <a href="">baby toys</a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex justify-start lg:gap-9 pt-10 items-start flex-wrap gap-3 xl:justify-center lg:mb-6"
+        >
+          <div
+            class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img class="m-auto" src="img/images11.png" alt="teddy bear" />
+            <div class="mt-10">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+
+          <div
+            class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img class="m-auto" src="img/images12.png" alt="play sets" />
+            <div class="mt-10 md:mt-14">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">baby play sets</p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+
+          <div
+            class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img class="m-auto" src="img/images13.png" alt="teddy bear" />
+            <div class="lg:mt-[5.5rem] ms:mt-14 md:mt-[4.8rem]">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">
+                puzzles for kids
+              </p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+
+          <div
+            class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img class="m-auto" src="img/images14.png" alt="dress" />
+            <div class="mt-[2rem]">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+
+          <div
+            class="xl:w-64 ms:hidden sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img
+              class="mt-4"
+              class="m-auto"
+              src="img/images15.png"
+              alt="ship"
+            />
+            <div class="lg:mt-[5rem] ms:mt-12 md:mt-[6rem]">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+
+          <div
+            class="xl:w-64 lg:w-[30%] ms:hidden sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img class="m-auto" src="img/images14.png" alt="dress" />
+            <div class="mt-[2rem]">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+
+          <div
+            class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img class="m-auto" src="img/images17.png" alt="teddy bear" />
+            <div class="mt-[2rem]">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+
+          <div
+            class="xl:w-64 lg:w-[30%] sm:w-[32%] ms:w-[100%] bg-[#e4f6fe] p-8"
+          >
+            <img class="m-auto mt-4" src="img/images18.png" alt="teddy bear" />
+            <div class="lg:mt-16 md:mt-[4.8rem] ms:mt-12">
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+              <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+              <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section new product -->
+
+    <!-- start section day of the deal -->
+    <section>
+      <div
+        class="relative w-full h-[25rem] bg-[#fcdcea] bg-[url('/src/img/images19.png')] bg-opacity-100 overflow-x-clip"
+      >
+        <img
+          class="absolute -top-[33px] -right-20 h-[27rem] ms:hidden z-50 md:w-[17rem] lg:w-96"
+          src="img/images21.png"
+          alt=" girl-img"
+        />
+        <img
+          class="absolute -top-[33px] left-0 h-[27rem] ms:hidden z-50 md:w-[15rem] lg:w-96"
+          src="img/images20.png"
+          alt=" girl-img"
+        />
+        <img
+          class="absolute top-0 z-0"
+          src="img/images22.png"
+          alt=" girl-img"
+        />
+        <img
+          class="absolute bottom-0 z-50"
+          src="img/images23.png"
+          alt=" girl-img"
+        />
+        <div class="max-w-[1200px] m-auto p-8 flex justify-center">
+          <div class="text-center mt-20">
+            <h1
+              class="lg:text-3xl md:text-xl font-fredoka ms:text-3xl text-black"
+            >
+              Deal Of The Day
+            </h1>
+            <p
+              class="lg:text-lg md:text-base font-fredoka uppercase mt-3 ms:text-lg"
+            >
+              <span class="text-[#f379a7]">UPTO 35% OFF</span> On All Other Baby
+              Products
+            </p>
+            <button
+              class="w-40 bg-[#f379a7] rounded-full p-3 capitalize text-white font-fredoka mt-14 hover:bg-[#95b3e0]"
+            >
+              <a href="">show now</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section day of the deal -->
+
+    <!-- start section collection flat -->
+    <section>
+      <div
+        class="max-w-[1200px] m-auto md:mt-20 grid md:grid-cols-2 p-8 md:gap-7 mb-20"
+      >
+        <div class="w-[100%]">
+          <img src="img/images24.png" alt="baby-img" />
+          <div
+            class="-mt-[13rem] lg:ml-[17rem] xl:ml-[22rem] text-white md:ml-[11.5rem] ms:ml-40"
+          >
+            <h1
+              class="lg:text-4xl md:text-3xl lg:mt-0 md:mt-14 font-fredoka ms:mt-16 ms:text-2xl"
+            >
+              collection
+            </h1>
+            <p class="lg:text-xl md:text-lg font-fredoka lg:mt-2 md:mt-1">
+              flat 20% off
+            </p>
+            <button
+              class="bg-[#f379a7] lg:w-28 md:w-24 ms:w-28 ms:mt-2 rounded-full p-2 font-fredoka lg:mt-10 md:mt-3 hover:bg-[#95b3e0]"
+            >
+              <a class="" href="">shop now</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="w-[100%] ms:mt-20">
+          <img src="img/images25.png" alt="baby-img" />
+          <div
+            class="-mt-[13rem] lg:ml-[17rem] xl:ml-[22rem] text-black md:ml-[11.5rem] ms:ml-40"
+          >
+            <h1
+              class="lg:text-4xl font-fredoka lg:mt-2 md:text-3xl md:mt-14 ms:mt-16 ms:text-2xl"
+            >
+              collection
+            </h1>
+            <p class="lg:text-xl font-fredoka lg:mt-2 md:mt-1">flat 20% off</p>
+            <button
+              class="bg-[#f379a7] lg:w-28 md:w-24 ms:w-28 ms:mt-2 rounded-full p-2 font-fredoka lg:mt-10 text-white hover:bg-[#95b3e0]"
+            >
+              <a href="">shop now</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start section collection flat -->
+
+    <!-- start section trending product  -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8">
+        <div class="flex flex-col items-center">
+          <h1 class="text-4xl font-fredoka">Trending Product</h1>
+          <p class="md:w-[33rem] text-center mt-5 ms:w-[22.5rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end section trending product  -->
+
+    <!-- start section list items -->
+    <section>
+      <div
+        class="max-w-[1200px] ms:gap-y-3 m-auto p-8 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 md:gap-5 lg:gap-6 mb-10"
+      >
+        <div class="xl:w-64 lg:w-[19rem] bg-[#e4f6fe] p-8">
+          <img class="m-auto" src="img/images11.png" alt="teddy bear" />
+          <div class="mt-10">
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+            <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+          </div>
+        </div>
+
+        <div class="xl:w-64 lg:w-[19rem] bg-[#e4f6fe] p-8">
+          <img class="m-auto" src="img/images27.png" alt="teddy bear" />
+          <div class="mt-[4.5rem]">
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+            <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+          </div>
+        </div>
+
+        <div class="xl:w-64 lg:w-[19rem] bg-[#e4f6fe] p-8">
+          <img class="m-auto" src="img/images28.png" alt="teddy bear" />
+          <div class="mt-10">
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+            <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+          </div>
+        </div>
+
+        <div class="xl:w-64 lg:w-[19rem] bg-[#e4f6fe] p-8">
+          <img class="m-auto" src="img/images29.png" alt="teddy bear" />
+          <div class="mt-[4.5rem]">
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star text-xs" style="color: #ffd43b"></i>
+            <p class="mt-2 capitalize font-rubik font-bold">funskool teddy</p>
+            <p class="mt-1 text-lg font-rubik font-extrabold">$190.12</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section list items -->
+
+    <!-- start section latest bag  -->
+    <section>
+      <div class="max-w-[1200px] m-auto p-8">
+        <div class="flex flex-col items-center">
+          <h1 class="text-4xl font-fredoka">Latest Blog</h1>
+          <p class="w-[33rem] text-center mt-5 ms:w-[22.5rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end section latest bag  -->
+
+    <!-- start section cards -->
+    <section>
+      <div
+        class="max-w-[1200px] ms:gap-y-7 m-auto p-8 grid lg:grid-cols-3 md:grid-cols-2 place-items-center md:gap-5 lg:gap-10 lg:mb-10"
+      >
+        <div class="xl:w-96 lg:w-80 shadow-md">
+          <img class="w-[100%]" src="img/images30.jpg" alt="child pay" />
+          <div class="p-5">
+            <p class="text-base font-rubik mt-6">
+              <span class="text-[#adadad] font-bold">By,</span>
+              <span class="text-[#f379a7]">June Cha</span>
+              <i class="fa-solid fa-circle text-[0.35rem]"></i> 25 May, 2121
+            </p>
+            <p class="xl:text-3xl font-rubik font-medium mt-4 lg:text-[1.6rem]">
+              Baby Planet's toys makes learning so easy
+            </p>
+            <button
+              class="w-32 p-3 text-white font-fredoka hover:bg-[#f379a7] rounded-full bg-[#95b3e0] mt-7"
+            >
+              <a href="">Read more</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="xl:w-96 lg:w-80 shadow-md">
+          <img class="w-[100%]" src="img/images31.jpg" alt="child pay" />
+          <div class="p-5">
+            <p class="text-base font-rubik mt-6">
+              <span class="text-[#adadad] font-bold">By,</span>
+              <span class="text-[#f379a7]">June Cha</span>
+              <i class="fa-solid fa-circle text-[0.35rem]"></i> 25 May, 2121
+            </p>
+            <p class="xl:text-3xl lg:text-[1.6rem] font-rubik font-medium mt-4">
+              Baby Planet's toys makes learning so easy
+            </p>
+            <button
+              class="w-32 p-3 text-white font-fredoka hover:bg-[#f379a7] rounded-full bg-[#95b3e0] mt-7"
+            >
+              <a href="">Read more</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="xl:w-96 lg:w-80 shadow-md">
+          <img class="w-[100%]" src="img/images32.jpg" alt="child pay" />
+          <div class="p-5">
+            <p class="text-base font-rubik mt-6">
+              <span class="text-[#adadad] font-bold">By,</span>
+              <span class="text-[#f379a7]">June Cha</span>
+              <i class="fa-solid fa-circle text-[0.35rem]"></i> 25 May, 2121
+            </p>
+            <p class="xl:text-3xl font-rubik font-medium mt-4 lg:text-[1.6rem]">
+              Baby Planet's toys makes learning so easy
+            </p>
+            <button
+              class="w-32 p-3 text-white font-fredoka hover:bg-[#f379a7] rounded-full bg-[#95b3e0] mt-7"
+            >
+              <a href="">Read more</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section cards -->
+
+    <!-- start footer section -->
+    <section
+      class="bg-[#333333] bg-[url('/src/img/images19.png')] bg-opacity-100"
+    >
+      <div
+        class="max-w-[1200px] m-auto p-8 grid md:grid-cols-[25%_50%_25%] items-center"
+      >
+        <div>
+          <img
+            class="ms:w-36 ms:m-auto"
+            src="img/images33.png"
+            alt="website logo"
+          />
+          <p
+            class="lg:w-[15rem] md:w-[10rem] ms:text-sm text-justify mt-5 text-white"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+            id adipisci odio cumque temporibus hic nostrum quas sint
+            exercitationem aspernatur ipsam voluptatum enim soluta, neque aut
+            cum reiciendis eaque tempora.
+          </p>
+          <div class="mt-5 flex justify-center ms:gap-4 md:gap-7">
+            <i class="fa-brands fa-twitter text-white hover:text-[#f379a7]"></i>
+            <i class="fa-brands fa-tiktok text-white hover:text-[#f379a7]"></i>
+            <i
+              class="fa-brands fa-facebook text-white hover:text-[#f379a7]"
+            ></i>
+            <i
+              class="fa-brands fa-instagram text-white hover:text-[#f379a7]"
+            ></i>
+          </div>
+        </div>
+        <div class="flex justify-between items-center lg:ml-10 ms:mt-5">
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">
+              Quick Links
+            </h1>
+            <div class="mt-2">
+              <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">
+              Quick Links
+            </h1>
+            <div class="mt-2">
+              <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div class="text-white">
+            <h1 class="text-lg text-white font-fredoka ms:text-base">
+              Quick Links
+            </h1>
+            <div class="mt-2">
+              <p class="ms:text-sm hover:text-[#f379a7]">- Support</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Helpline</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Courses</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- About</p>
+              <p class="ms:text-sm mt-1 hover:text-[#f379a7]">- Event</p>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="md:mt-16 ms:mt-5">
+          <h1 class="text-lg text-white font-fredoka ms:text-base">
+            Store Information.
+          </h1>
+          <div class="text-white mt-3">
+            <p class="ms:text-sm">2005 Your Address Goes Here.</p>
+            <p class="mt-1 ms:text-sm">896, Address 10010, HGJ</p>
+            <p class="mt-1 ms:text-sm">
+              Phone/Fax: <span class="hover:text-[#f379a7]">0123456789</span>
+            </p>
+            <p class="mt-1 ms:text-sm">
+              Email: <span class="hover:text-[#f379a7]">demo@example.com</span>
+            </p>
+          </div>
+          <div class="mt-8">
+            <img class="md:w-56 ms:w-48" src="img/images34.png" alt="cards" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end footer section -->
+
+    <!-- start copy right section -->
+    <section class="bg-[#333333]">
+      <div
+        class="max-w-[1200px] m-auto p-2 text-center font-rubik font-bold text-white ms:text-xs"
+      >
+        <p>
+          &copy;2021 <span class="text-[#f379a7]">Muhammad Hamza.</span> Made
+          <i class="fa-solid fa-heart" style="color: #e40733"></i> with by
+          MHThemes
+        </p>
+      </div>
+    </section>
+    <!-- start copy right section -->
+  </body>
+  <script>
+    // JavaScript for toggling the mobile menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>
